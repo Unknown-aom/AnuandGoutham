@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOR MY FIRST PRIORITY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-left" aria-hidden="true"></div>
+    <div class="ambient ambient-right" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="frame-backdrop" id="frameBackdrop" aria-hidden="true"></div>
+
+    <main class="experience">
+      <section class="screen is-active" id="loginScreen" aria-labelledby="loginTitle">
+        <div class="glass-card auth-card">
+          <p class="eyebrow">private access</p>
+          <h1 id="loginTitle">For MY BABYYYYY</h1>
+          <p class="lead">
+            A tiny corner of the universe made only for you.
+          </p>
+
+          <form class="login-form" id="loginForm" novalidate>
+            <label class="field-label" for="passwordInput">Password</label>
+            <div class="input-wrap">
+              <input
+                id="passwordInput"
+                name="password"
+                type="password"
+                inputmode="numeric"
+                autocomplete="off"
+                placeholder="Enter our little secret"
+                aria-describedby="loginHint"
+              />
+            </div>
+            <p class="hint" id="loginHint" aria-live="polite"></p>
+            <button class="action-btn ripple" type="submit">Unlock</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="screen" id="entryScreen" aria-labelledby="entryTitle">
+        <div class="glass-card entry-card">
+          <p class="eyebrow">one last question</p>
+          <h2 id="entryTitle">Do you love me?</h2>
+          <p class="lead">There is no other option, try clicking on no ;></p>
+
+          <div class="entry-actions" id="entryActions">
+            <button class="action-btn ripple yes-btn" id="yesBtn" type="button">
+              YES
+            </button>
+            <button class="ghost-btn ripple no-btn" id="noBtn" type="button">
+              NO
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="mainScreen" aria-label="Main app">
+        <div class="app-shell glass-card" id="appShell">
+          <header class="top-bar">
+            <div>
+              <p class="eyebrow">I LOB YOU</p>
+              <h2>FOR MY BOSS BABYYY ❤️</h2>
+            </div>
+            <button class="icon-btn ripple" id="appFullscreenBtn" type="button">
+              Enter Fullscreen
+            </button>
+          </header>
+
+          <nav class="tab-bar" aria-label="Sections">
+            <button class="tab-btn ripple is-active" data-section="home" type="button">
+              Home
+            </button>
+            <button class="tab-btn ripple" data-section="dates" type="button">
+              Dates
+            </button>
+            <button class="tab-btn ripple" data-section="play" type="button">
+              Play
+            </button>
+            <button class="tab-btn ripple" data-section="message" type="button">
+              Message
+            </button>
+          </nav>
+
+          <section class="app-body">
+            <article class="content-panel is-active" data-panel="home">
+              <div class="hero-block">
+                <p class="eyebrow">home</p>
+                <h3>My forever, my first and last ❤️</h3>
+                <div class="rotator-card">
+                  <span class="rotator-prefix">always and forever:</span>
+                  <span class="rotating-text" id="rotatingText">my wifeyyy</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="content-panel" data-panel="dates">
+              <div class="section-copy">
+                <p class="eyebrow">dates</p>
+                <h3>Our little timeline</h3>
+              </div>
+              <div class="date-grid">
+                <div class="date-card">
+                  <span class="date-day">23 May</span>
+                  <p>YOUR Birthday &amp; Our Anniversary ❤️</p>
+                </div>
+                <div class="date-card">
+                  <span class="date-day">29 May</span>
+                  <p>Our First Meet 🥺</p>
+                </div>
+                <div class="date-card">
+                  <span class="date-day">August 15</span>
+                  <p>You asked me to marry you 💍</p>
+                </div>
+                  <div class="date-card">
+                  <span class="date-day">April 20</span>
+                  <p>Our second meet and our first kissss🥺</p>
+                </div>
+              </div>
+              <p class="note-card">
+                BABY I AM NOT GOOD WITH DATESS YOU KNOW IT TOOO 😭 imma add more as
+                our journey goes I love you soooo muchh ❤️
+              </p>
+            </article>
+
+            <article class="content-panel" data-panel="play">
+              <div class="section-copy align-center">
+                <p class="eyebrow">play</p>
+                <h3>HEHEHE I HAVE NO IDEA WHY I ADDED THIS HERE,BUT YEAAA HEHE I LOB YOUUU 😄❤️</h3>
+              </div>
+
+              <div class="play-frame-shell" id="playFrameShell">
+                <div class="play-toolbar">
+                  <span>Touch the colors and let them flow</span>
+                  <button class="icon-btn ripple" id="playFullscreenBtn" type="button">
+                    Fullscreen ⛶
+                  </button>
+                </div>
+                <div class="play-frame">
+                  <iframe
+                    src="https://coder1-web.github.io/fluid-simulation/"
+                    title="Fluid simulation"
+                    loading="lazy"
+                    allow="fullscreen"
+                  ></iframe>
+                </div>
+              </div>
+            </article>
+
+            <article class="content-panel" data-panel="message">
+              <div class="message-card">
+                <p class="eyebrow">message</p>
+                <h3>A little corner for everything I want to tell you</h3>
+
+                <section class="message-section" aria-labelledby="nicknameTitle">
+                  <h4 id="nicknameTitle">Your nicknames heheeee</h4>
+                  <p class="message-copy nickname-list">
+                    My forever, my first and last, my wifeyyy, my beaniee, my
+                    babyyy, my chinnu, my boss baby, my best thing, my
+                    bestfriend, my goddesse, my happiness, my foreheaddd, my
+                    first priority, My hottie, My princess, My biggest
+                    supporter, My love, my cuite, My mommmyyyy, Good GOD I
+                    LOVEEE YOUUU ❤️
+                  </p>
+                </section>
+
+                <section class="message-section" aria-labelledby="poemTitle">
+                  <h4 id="poemTitle">Poet I AMMM, I LOVE YOUUUU</h4>
+                  <p class="message-copy">
+                    I love you so much my babyyyy… I swear I’ve never felt
+                    anything like this before, not even close. The way you make
+                    me feel is something I didn’t even know existed. It’s like
+                    you walked into my life and suddenly everything made sense,
+                    like my heart finally found where it belongs. With you,
+                    everything feels different… softer, warmer, real in a way I
+                    can’t explain.
+                  </p>
+                  <p class="message-copy">
+                    I keep thinking about you all the time, the little things you
+                    do, the way you talk, the way you make me smile without even
+                    trying. It’s crazy how one person can change everything, but
+                    you did that for me. You became my comfort, my happiness, my
+                    peace… all in one. Being with you doesn’t feel forced or
+                    complicated, it just feels right, like it was always meant to
+                    be this way.
+                  </p>
+                  <p class="message-copy">
+                    And listen to me… I’m never leaving. No matter what happens,
+                    no matter how hard things get, I’m staying. I’m choosing
+                    you, again and again, every single day. Because what we have
+                    is not something I could ever walk away from. You mean too
+                    much to me, more than I can even put into words.
+                  </p>
+                  <p class="message-copy">
+                    And if somehow life tries to pull us apart… if things ever go
+                    wrong or distance comes in between us, just know this one
+                    thing clearly: I’m not replacing you. I’m not going to go
+                    find another girl and pretend it’s the same, because it’s
+                    not. It never will be. What I feel for you is once in a
+                    lifetime, and I’m not about to throw that away or try to
+                    recreate it with someone else. If it’s not you, then it’s no
+                    one.
+                  </p>
+                  <p class="message-copy">
+                    You’re not just someone I love… you’re my person. The one I
+                    want to grow with, laugh with, argue with, and still choose
+                    at the end of the day. I want all of it with you: the good,
+                    the messy, the real. Because even on the worst days, I’d
+                    still pick you without thinking twice.
+                  </p>
+                  <p class="message-copy">
+                    I don’t know what the future holds, but I know one thing for
+                    sure… I want you in it. Always. No matter where life takes
+                    us, I want us to face it together. Because loving you feels
+                    like the most natural thing I’ve ever done, and I’m not
+                    letting that go.
+                  </p>
+                  <p class="message-copy">
+                    I love you… more than you even realize, my babyyyy. ❤️
+                  </p>
+                </section>
+
+                <section class="message-section" aria-labelledby="friendsTitle">
+                  <h4 id="friendsTitle">
+                    MY BELOVED GILGO/VAVA/AMAR/MAR AND PRATHANA/LENCHO/LENCHU
+                  </h4>
+                  <p class="message-copy">
+                    honestly, we’re really lucky too… because if it wasn’t for
+                    Lencho and Amar, we probably wouldn’t have met like this in
+                    real life. They’re the reason our paths crossed, and I’ll
+                    always be grateful for that. It feels like everything just
+                    fell into place at the right time, like it was meant to
+                    happen. Out of all the chances in this world, we found each
+                    other, and that’s something I’ll never take for granted. What
+                    we have is special, and I know deep down we were meant to
+                    meet, meant to happen, and meant to stay. ❤️
+                  </p>
+                </section>
+
+                <section class="message-section" aria-labelledby="promiseTitle">
+                  <h4 id="promiseTitle">I KNOW YOU WONT LEAVE, Ill NEVER LEAVE YOU TOO</h4>
+                  <p class="message-copy">
+                    Just know to God whatever happens I WONT DISAPPER OR LEAVE
+                    YOU. The only times Ill be leaving you is when you get
+                    closer with a guy and in way for me he seems more important
+                    then I am to you or more closer then me (When You find
+                    Someone better), and the other is when you lose feelings or
+                    interest or you want me to leave.
+                  </p>
+                  <p class="message-copy">
+                    Just know if you leave I am not finding anyone. I wont move
+                    on I swear on everything I love and God, I die like a man.
+                  </p>
+                  <p class="message-copy">
+                    YOU ARE THE BEST THING THAT EVER HAPPENED TO ME EVER, MY
+                    BIGGEST AND BEST GIFT FROM GOD... I LOVE YOU SOO MUCHHHH
+                    MWAHHH YOU MOREEE
+                  </p>
+                </section>
+
+                <p class="closing-note">IMMA ADD MORE HEHEHEEE I LOB YOU</p>
+
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
